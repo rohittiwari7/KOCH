@@ -22,7 +22,7 @@ public class utilities
 		
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
-		File des=new File("./Screenshots/KochProject_"+utilities.timeDate() +".png");
+		File des=new File("./Screenshots/KochProject_Screenshot_"+utilities.timeDate() +".png");
 		
 		try {
 			FileHandler.copy(src, des);
