@@ -14,7 +14,7 @@ import org.openqa.selenium.io.FileHandler;
 
 public class utilities 
 {
-	//Screenshot, timestamp, alerts, frames, window, sync issue, javascript executor
+	//Screenshot, time-stamp, alerts, frames, window, sync issue, Javascript executor
 	
 	
 	public static void  captureScreenshots(WebDriver driver)
@@ -22,7 +22,7 @@ public class utilities
 		
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
-		File des=new File("./Screenshots/App_"+utilities.timeDate() +".png");
+		File des=new File("./Screenshots/KochProject_"+utilities.timeDate() +".png");
 		
 		try {
 			FileHandler.copy(src, des);

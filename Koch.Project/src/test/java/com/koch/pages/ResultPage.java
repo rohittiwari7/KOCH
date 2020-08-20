@@ -2,12 +2,10 @@ package com.koch.pages;
 
 import java.util.List;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class ResultPage extends BaseClass
+public class ResultPage
 {
 	
 	@FindBy(xpath = "//div[@class='fltrs-cntnr']/div[1]/div[1]/div/div/div[1]/span/div[1]/span[1]") WebElement nonstop;

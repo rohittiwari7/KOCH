@@ -26,7 +26,7 @@ public class BaseClass
 	{
 		config=new ConfigDataProvider();
 		@SuppressWarnings("deprecation")
-		ExtentHtmlReporter rhr=new ExtentHtmlReporter(new File("./Reports/report_"+utilities.timeDate()+".html"));
+		ExtentHtmlReporter rhr=new ExtentHtmlReporter(new File("./Reports/KochReport_"+utilities.timeDate()+".html"));
 		report=new ExtentReports();
 		report.attachReporter(rhr);
 	}
