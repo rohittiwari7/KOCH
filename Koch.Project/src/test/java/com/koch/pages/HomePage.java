@@ -35,12 +35,14 @@ public class HomePage
 	 //Source data 
 		     fromDefaultValue.click();
 		     From.sendKeys("Pune");
+		     Thread.sleep(2000);
 		     From.sendKeys(Keys.ENTER);
-		 
+		     
 		//Destination data
 		    To.sendKeys("Hyderabad");
-		   To.sendKeys(Keys.ENTER);
-		 
+		    Thread.sleep(2000);
+		    To.sendKeys(Keys.ENTER);
+		   
 		//Departure date selection
 			DepartureDate.click();
 			ReturnCalender.click();
