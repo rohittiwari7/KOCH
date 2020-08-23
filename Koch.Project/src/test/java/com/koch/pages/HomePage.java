@@ -21,10 +21,16 @@ public class HomePage
 	@FindBy(xpath = "//div[@class='form-fields']/div[6]") WebElement SearchButton ;
 	ConfigDataProvider config=new ConfigDataProvider();
 
+	
+	 /*
+	  * @author: Rohit tiwari 
+	  * @Description:Validation of the landing page
+	  * @createdOn: 20 August 2020
+	  */
 	 public void ValidateHomePage(WebDriver driver)
 	{ 
 		   String title=driver.getTitle();
-			//Validation of the landing page 
+			 
 			if(title.equalsIgnoreCase(config.getTitleHomePage()))
 			{
 				System.out.println("==============Landing Page validaiton done successfully=============================");
@@ -32,6 +38,11 @@ public class HomePage
 		  
 	}
 	 
+	 /*
+	  * @author: Rohit tiwari 
+	  * @Description: Serach the Airlines with asked details 
+	  * @createdOn: 20 August 2020
+	  */
 	 public void searchingAirlines() throws InterruptedException
 	 {
 	 //Source data 

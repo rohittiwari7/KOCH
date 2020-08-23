@@ -15,10 +15,16 @@ public class ResultPage
 	@FindBy(xpath = "//div[@class='arln-nm']") List<WebElement> listofAirlines;
 	@FindBy(xpath = "//div[@class='arln-pr']/div") List<WebElement> airlinesPrice;
 
+	
+	 /*
+	  * @author: Rohit tiwari 
+	  * @Description: Validation filter option for Stop, departure and Airlines and select Non-Stop in Stop filter option
+	  * @createdOn: 20 August 2020
+	  */
+	
 	 public void ValidationFilterOption()
 	{
-		 //Validation filter option for Stop, departure and Airlines and select Non-Stop in Stop filter option
-			
+	
 			if(stop.isDisplayed())
 			{
 				System.out.println("====================Stop filter Validation Done==============================");
@@ -36,10 +42,16 @@ public class ResultPage
 			}
 	}
 	 
+	 
+	 /*
+	  * @author: Rohit tiwari 
+	  * @Description: Print the list of Airlines details having fare <5000
+	  * @createdOn: 20 August 2020
+	  */
+	 
 	 public void airlineDetails() throws InterruptedException
 	 {
-		 
-		//Print the list of Airlines details having fare <5000
+
 		 System.out.println("=======================Airlines Details=========================");
 		for(int i=0;i<listofAirlines.size();i++)
 		{
